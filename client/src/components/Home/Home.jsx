@@ -13,9 +13,9 @@ const Home = () => {
         <section className='home'>
             <div className="container">
                 <Stack direction={["column", "row"]} height={"100%"} justifyContent={["center", "space-between"]} alignItems={"center"} spacing={["16", "56"]}>
-                    <VStack width={"full"} alignItems={["center", "flex-end"]} >
+                    <VStack width={"full"} alignItems={["center", "flex-end"]} spacing={"8"} >
                         <Heading children="LEARN FROM THE EXPERTS" size={"2xl"} />
-                        <Text children="Find Valueable Content At reasonable Price" />
+                        <Text fontSize={"xl"} fontFamily={"cursive"} textAlign={["center", "left"]} children="Find Valueable Content At reasonable Price" />
                         <Link to='/courses'>
                             <Button size={"lg"} colorScheme="yellow">
                                 Explore Now
