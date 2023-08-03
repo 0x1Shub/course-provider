@@ -14,7 +14,8 @@ const Header = () => {
     }
 
     const logoutHandler = () => {
-        console.log("Log Out")
+        console.log("Log Out");
+        onClose();
     }
 
     return (
@@ -31,19 +32,19 @@ const Header = () => {
                     <DrawerHeader borderBottomWidth={"1px"}>COURSE PROVIDER</DrawerHeader>
                     <DrawerBody>
                         <VStack spacing={"4"} alignItems={"flex-start"}>
-                            <Link to={'/'}>
+                            <Link onClick={onClose} to={'/'}>
                                 <Button variant={"ghost"}>Home</Button>
                             </Link>
-                            <Link to={'/courses'}>
+                            <Link onClick={onClose} to={'/courses'}>
                                 <Button variant={"ghost"}>Browse All Courses</Button>
                             </Link>
-                            <Link to={'/request'}>
+                            <Link onClick={onClose} to={'/request'}>
                                 <Button variant={"ghost"}>Request a Course</Button>
                             </Link>
-                            <Link to={'/contact'}>
+                            <Link onClick={onClose} to={'/contact'}>
                                 <Button variant={"ghost"}>Contact Us</Button>
                             </Link>
-                            <Link to={'/about'}>
+                            <Link onClick={onClose} to={'/about'}>
                                 <Button variant={"ghost"}>About</Button>
                             </Link>
 
@@ -51,7 +52,7 @@ const Header = () => {
                                 {isAuthenticated ? (<>
                                     <VStack>
                                         <HStack>
-                                            <Link to={"/profile"}>
+                                            <Link onClick={onClose} to={"/profile"}>
                                                 <Button variant={"ghost"} colorScheme={"yellow"}>Profile</Button>
                                             </Link>
                                             <Button variant={"ghost"} onClick={logoutHandler} >
@@ -67,13 +68,13 @@ const Header = () => {
                                     </VStack>
 
                                 </>) : (<>
-                                    <Link to={"/login"}>
+                                    <Link onClick={onClose} to={"/login"}>
                                         <Button colorScheme={"yellow"}>Login</Button>
                                     </Link>
 
                                     <p>OR</p>
 
-                                    <Link to={"/register"}>
+                                    <Link onClick={onClose} to={"/register"}>
                                         <Button colorScheme={"yellow"}>Sign Up</Button>
                                     </Link>
                                 </>)}
