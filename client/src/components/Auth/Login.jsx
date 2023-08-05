@@ -14,7 +14,7 @@ const Login = () => {
                 <form style={{ width: "100%" }}>
                     <Box my={"4"}>
                         <FormLabel htmlFor='email' children={"Email Address"} />
-                        <Inputrequired id='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='abc@gmail.com' type='email' focusBorderColor={"yellow.500"} />
+                        <Input required id='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='abc@gmail.com' type='email' focusBorderColor={"yellow.500"} />
                     </Box>
 
                     <Box my={"4"}>
