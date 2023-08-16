@@ -8,7 +8,7 @@ const Header = () => {
 
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const isAuthenticated = false;
+    const isAuthenticated = true;
     const user = {
         role: "admin"
     }
@@ -22,7 +22,7 @@ const Header = () => {
         <>
             <ColorModeSwitcher />
 
-            <Button onClick={onOpen} colorScheme={"yellow"} width={"12"} height={"12"} rounded={"full"} position={"fixed"} top={"6"} left={"6"}>
+            <Button onClick={onOpen} colorScheme={"yellow"} width={"12"} height={"12"} zIndex={'overlay'} rounded={"full"} position={"fixed"} top={"6"} left={"6"}>
                 <RiMenu5Fill />
             </Button>
 
