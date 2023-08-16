@@ -75,7 +75,7 @@ const Profile = () => {
                             <Button>Update Profile</Button>
                         </Link>
 
-                        <Link to={'/changepasword'}>
+                        <Link to={'/changepassword'}>
                             <Button>Change Password</Button>
                         </Link>
                     </Stack>
