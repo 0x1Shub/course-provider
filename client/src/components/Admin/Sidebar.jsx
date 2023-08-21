@@ -8,7 +8,7 @@ const Sidebar = () => {
     const location = useLocation();
 
     return (
-        <VStack spacing={'8'} p={'16'} box-shadow={'-2px 0 10px rgba(107, 70, 193, 0.5'}>
+        <VStack spacing={'8'} p={'16'} boxShadow={'-2px 0 10px rgba(107, 70, 193, 0.5)'}>
 
             <Link to={'/admin/dashboard'}>
                 <Button colorScheme={location.pathname === "/admin/dashboard" ? "purple" : ""} fontSize={'larger'} variant={'ghost'} >
