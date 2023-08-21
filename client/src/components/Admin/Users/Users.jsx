@@ -1,4 +1,4 @@
-import { Box, Grid } from '@chakra-ui/react'
+import { Box, Grid, Text } from '@chakra-ui/react'
 import React from 'react'
 import Sidebar from '../Sidebar'
 
